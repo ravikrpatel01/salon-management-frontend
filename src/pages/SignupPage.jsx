@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { FiUser, FiMail, FiLock, FiLogIn } from "react-icons/fi";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 const SignupPage = () => {
   const [formData, setFormData] = useState({
@@ -174,12 +175,12 @@ const SignupPage = () => {
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
               Already have an account?{" "}
-              <a
-                href="/login"
+              <Link
+                to="/login"
                 className="font-medium text-emerald-600 hover:text-emerald-500"
               >
                 Sign in
-              </a>
+              </Link>
             </p>
           </div>
         </div>

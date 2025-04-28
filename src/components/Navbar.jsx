@@ -1,6 +1,7 @@
 import React from "react";
 import { MdNotificationsActive } from "react-icons/md";
 import { FaUserCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -12,7 +13,10 @@ function Navbar() {
           </div>
           <div className="ml-10">
             <ul className="flex space-x-5 text-lg">
-              <li>Home</li>
+              <Link to="/">
+                <li>Home</li>
+              </Link>
+
               <li>Services</li>
               <li>Contact</li>
             </ul>
@@ -20,7 +24,9 @@ function Navbar() {
         </div>
         <div>
           <ul className="flex space-x-10">
-            <li className="border border-emerald-500 py-1 px-3 text-green-600">BECOME PARTNER</li>
+            <li className="border border-emerald-500 py-1 px-3 text-green-600">
+              BECOME PARTNER
+            </li>
             <li>
               <MdNotificationsActive size={30} color="green" />
             </li>

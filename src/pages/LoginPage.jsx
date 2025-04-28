@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { FiMail, FiLock, FiLogIn } from "react-icons/fi";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -109,12 +110,12 @@ const LoginPage = () => {
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
               Don't have an account?{" "}
-              <a
-                href="#"
+              <Link
+                to="/signup"
                 className="font-medium text-emerald-600 hover:text-emerald-500"
               >
                 Sign up
-              </a>
+              </Link>
             </p>
           </div>
         </div>
